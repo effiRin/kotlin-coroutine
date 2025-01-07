@@ -1,12 +1,18 @@
 package org.example
 
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import org.example.chapter2.`Code2-3`
+import org.example.chapter2.`Code2-4`
+import org.example.chapter3.`Code3-1`
+import org.example.chapter3.`Code3-5`
 
-fun main() = runBlocking {
-    println("Hello Coroutines!")
+fun main() {
+//    `Code2-3`().test()
+//    `Code2-4`().test()
+//    `Code3-1`().test()
+    `Code3-5`().test()
 }
 
-/***
- * runBlocking 함수는 해당 함수를 호출한 스레드를 사용해 실행되는 코루틴을 만들어 낸다
- * 이 코루틴은 runBlocking 함수의 인자로 들어온 람다식을 실행하며, 람다식 내부의 모든 코드가 실행 완료될 때까지 코루틴은 종료되지 않는다.
- */
+
+
