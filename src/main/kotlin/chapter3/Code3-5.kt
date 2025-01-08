@@ -1,9 +1,6 @@
 package org.example.chapter3
 
-import kotlinx.coroutines.CoroutineDispatcher
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.newFixedThreadPoolContext
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
 class `Code3-5` {
     /***
@@ -19,6 +16,7 @@ class `Code3-5` {
      * 즉，두 함수는 같은 함수라고 봐도 무방하다.
      */
 
+    @OptIn(DelicateCoroutinesApi::class)
     fun test() = runBlocking {
 
         val multiThreadDispatcher: CoroutineDispatcher = newFixedThreadPoolContext(nThreads = 2, name = "MultiThread")
