@@ -25,5 +25,17 @@ class `Code3-9` {
     /***
      * Dispatchers.Default의 여러 스레드 중 2개의 스레드만 사용해 10개의 코루틴을 실행시킨다.
      * 따라서 결과에서 코루틴을 실행하는 데 사용된 스레드를 보면 DefaultDispatcher-worker-1 과 DefaultDispatcher-worker-2만 사용된 것을 볼 수 있다.
+     *
+     * // 결과
+     * DefaultDispatcher-worker-1 @coroutine#3 코루틴 실행
+     * DefaultDispatcher-worker-1 @coroutine#4 코루틴 실행
+     * DefaultDispatcher-worker-1 @coroutine#5 코루틴 실행
+     * DefaultDispatcher-worker-1 @coroutine#6 코루틴 실행
+     * DefaultDispatcher-worker-2 @coroutine#7 코루틴 실행
+     * DefaultDispatcher-worker-1 @coroutine#8 코루틴 실행
+     * DefaultDispatcher-worker-2 @coroutine#9 코루틴 실행
+     * DefaultDispatcher-worker-1 @coroutine#10 코루틴 실행
+     * DefaultDispatcher-worker-2 @coroutine#11 코루틴 실행
+     * DefaultDispatcher-worker-1 @coroutine#12 코루틴 실행
      */
 }
