@@ -19,5 +19,6 @@ fun main() {
 //    `Code3-10`().test()
 //    `Code3-11`().test()
 
-    Code9().`Code5-9`()
+//    Code9().`Code5-9`()
+    Code9().`Code5-10`()
 }
