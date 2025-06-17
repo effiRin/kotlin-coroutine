@@ -5,6 +5,9 @@ import kotlinx.coroutines.runBlocking
 import org.example.chapter2.`Code2-3`
 import org.example.chapter2.`Code2-4`
 import org.example.chapter3.*
+import org.example.chapter5.Code11
+import org.example.chapter5.Code12
+import org.example.chapter5.Code13
 import org.example.chapter5.Code9
 
 fun main() {
@@ -19,5 +22,10 @@ fun main() {
 //    `Code3-10`().test()
 //    `Code3-11`().test()
 
-    Code9().`Code5-9`()
+//    Code9().`Code5-9`()
+//    Code9().`Code5-10`()
+
+//    Code11().`Code5-11`()
+//    Code12().`Code5-12`()
+    Code13().`Code5-13`()
 }
